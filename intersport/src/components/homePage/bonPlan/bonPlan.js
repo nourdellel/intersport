@@ -2,6 +2,8 @@ import React from "react";
 import "./bonPlan.scss";
 import bonPlanImage from "../../../images/assets/illustration bon plan.png";
 import vttImage from "../../../images/products/Rectangle.png";
+import backgroundVector from "../../../images/assets/Vector.png";
+import backgroundRound from "../../../images/assets/Vector (1).png";
 
 function BonPlan() {
   return (
@@ -17,11 +19,23 @@ function BonPlan() {
         <div className="bonPlan-container-Right-Column-discount-price">
           -300€
         </div>
-        <img
-          className="bonPlan-container-vttImage"
-          src={vttImage}
-          alt="Background"
-        />
+        <div className="bonPlan-container-GroupeImages">
+          <img
+            className="bonPlan-container-vttImage"
+            src={vttImage}
+            alt="productImage"
+          />
+          <img
+            className="bonPlan-container-backgroundVectorImage"
+            src={backgroundVector}
+            alt="BackgroundForm"
+          />
+          <img
+            className="bonPlan-container-backgroundRoundImage"
+            src={backgroundRound}
+            alt="BackgroundForm"
+          />
+        </div>
         <div className="bonPlan-container-Right-Column-text-line">
           <div className="bonPlan-container-Right-Column-product-oldPrice">
             999,99€
