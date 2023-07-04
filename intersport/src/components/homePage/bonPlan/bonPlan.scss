@@ -1,0 +1,113 @@
+.bonPlan-container {
+  background-color:rgba(242, 242, 242, 1);
+  grid-template-columns: 1fr 1fr; 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // grid-gap: 50px; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.bonPlan-container-image {
+  margin-top: 20px;
+}
+
+
+.bonPlan-container-vttImage {
+  margin: 30px 100px 0px 100px;
+
+}
+
+
+.bonPlan-container-Right-Column {
+  background-color:rgb(255, 255, 255);
+}
+
+.bonPlan-container-Right-Column-discount-price {
+  font-family: 'Amsi Pro Condensed', sans-serif;
+  font-size: 51.13px;
+  line-height: 30.68px;
+  color: rgba(255, 230, 0, 1);
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 1);
+  padding-top: 12px;
+  border-radius: 12px;
+  gap: 12.17px;
+  height: 40.48px;
+  width: 150.96px;
+  margin: 30px 0px 0px 30px;
+}
+
+
+.bonPlan-container-Right-Column-text-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bonPlan-container-Right-Column-product-oldPrice {
+  font-size: 30px;
+  line-height: 40.85px;
+  font-weight: 600;
+  color: rgba(60, 60, 59, 1);
+  text-decoration: line-through;
+  padding-top: 6px;
+  padding-right: 8px;
+
+}
+
+.bonPlan-container-Right-Column-product-newPrice {
+  font-size: 40px;
+  line-height: 54.47px;
+  font-weight: 800;
+  color: rgba(227, 6, 19, 1);
+}
+
+.bonPlan-container-Right-Column-product-brand {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 35.41px;
+  color: rgba(60, 60, 59, 1);
+  text-align: center;
+  align-items: center;
+}
+
+.bonPlan-container-Right-Column-product-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.24px;
+  color: rgba(60, 60, 59, 1);
+  text-align: center;
+  align-items: center;
+}
+
+
+.bonPlan-container-Right-Column-buy-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.07px;
+  // text-align: center;
+  // align-items: center;
+  color: rgba(57, 57, 56, 1);
+  width: 85px;
+  height: 47px;
+  border-radius: 26px;
+  gap: 10px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(57, 57, 56, 1);
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  margin-left: 250px; /* Center horizontally */
+}

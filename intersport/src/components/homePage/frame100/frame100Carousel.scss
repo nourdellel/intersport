@@ -1,0 +1,134 @@
+.frame100Carousel-container {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1fr 1fr; 
+  grid-gap: 10px; 
+  align-items: center;
+  margin-top: -80px;
+}
+
+.column-Carousel {
+  flex: 1; /* Distribute the available space equally among the columns */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin-top: -80px;
+}
+
+.column-left {
+// padding-left: 300px;
+// margin-top: -80px;
+ display: flex;
+  flex-direction: row;
+
+}
+
+.column-left-image {
+  margin-left: 200px;
+}
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+.discount-price {
+  font-family: 'Amsi Pro Condensed', sans-serif;
+  font-size: 24px;
+  line-height: 14.4px;
+  color: rgba(255, 230, 0, 1);
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 8px 12px 8px 12px;
+  border-radius: 10px;
+  gap: 10px;
+  height: 15px;
+  width: 50px;
+}
+
+.product-category {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 21.79px;
+  color: rgba(57, 57, 56, 1)
+}
+
+.product-brand {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: rgba(57, 57, 56, 1)
+}
+
+.product-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(57, 57, 56, 1)
+}
+
+.column-right-text-line {
+  display: flex;
+  padding-top: 15px;
+}
+
+.product-oldPrice {
+  font-size: 18px;
+  line-height: 24.51px;
+  font-weight: 400;
+  color: rgba(57, 57, 56, 1);
+  text-decoration: line-through;
+  padding-top: 6px;
+  padding-right: 8px;
+
+}
+
+.product-newPrice {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+  color: rgba(227, 6, 19, 1);
+}
+
+.buy-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.07px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  width: 97px;
+  height: 41px;
+  // padding: 16px 22px;
+  border-radius: 26px;
+  gap: 10px;
+  background: rgba(22, 65, 148, 1);
+  border: none;
+  margin-top: 30px;
+}
+
+
+.scroll-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  line-height: 19.07px;
+  text-align: center;
+  color: rgba(22, 65, 148, 1);
+  width: 70px;
+  height: 70px;
+  padding: 16px 22px;
+  border-radius: 50%;
+  gap: 10px;
+  background: rgba(255, 255, 255, 1);
+  border: none;
+  margin-top: 30px;  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1575);
+  cursor: pointer;
+}
