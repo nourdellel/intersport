@@ -11,9 +11,8 @@
 .catalogue-container-empty {
   width: 100%;
   height: 143px;
-  background-color: rgb(242,242,242);
+  background-color: rgb(242, 242, 242);
 }
-
 
 .catalogue-container-blackFridayFrame {
   position: absolute;
@@ -21,7 +20,6 @@
   bottom: 0;
   z-index: 1;
 }
-
 
 .catalogue-container-catalogueImage {
   position: absolute;
@@ -36,12 +34,10 @@
   z-index: 4;
   margin-left: 900px;
   text-align: center;
-  
 }
 
-
 .catalogue-catalogueText {
-  font-family: 'AmsiProCond-SemiBoldItalic', sans-serif;
+  font-family: "AmsiProCond-SemiBoldItalic", sans-serif;
   font-size: 60px;
   line-height: 70.31px;
   text-transform: uppercase;
@@ -51,7 +47,7 @@
 }
 
 .catalogue-catalogueTextWhite {
-  font-family: 'AmsiProCond-SemiBoldItalic', sans-serif;
+  font-family: "AmsiProCond-SemiBoldItalic", sans-serif;
   font-size: 60px;
   line-height: 70.31px;
   text-transform: uppercase;
@@ -61,15 +57,14 @@
   margin-left: 30px;
 }
 
-
 .catalogue-blackText {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 19.07px;
   font-weight: 600;
 }
 
-.catalogue-button-discover{
+.catalogue-button-discover {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -83,6 +78,12 @@
   border: 1px solid rgba(57, 57, 56, 1);
   margin-top: 30px;
   margin-bottom: 30px;
-  padding: 16px, 22px, 16px, 22px
-  ;
+  padding: 16px, 22px, 16px, 22px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.catalogue-button-discover:hover {
+  background: rgba(57, 57, 56, 1);
+  color: #fff;
 }

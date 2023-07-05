@@ -8,15 +8,13 @@
   grid-gap: 10px; /* Add some gap between the columns */
 }
 
-
-
 .main-container {
-  background: rgb(242,242,242);
+  background: rgb(242, 242, 242);
+  height: 900px;
 }
 
-
 .topBrand-blackText {
-  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-family: "AmsiProCond-Ultra", sans-serif;
   font-size: 50px;
   line-height: 50px;
   text-transform: uppercase;
@@ -24,7 +22,7 @@
 }
 
 .topBrand-outlinedText {
-  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-family: "AmsiProCond-Ultra", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
@@ -35,9 +33,8 @@
   margin-left: -220px;
 }
 
-
 .topBrand-exclusivityText {
-  font-family: 'AmsiProCond-SemiBoldItalic', sans-serif;
+  font-family: "AmsiProCond-SemiBoldItalic", sans-serif;
   font-size: 23px;
   line-height: 23px;
   text-transform: uppercase;
@@ -46,8 +43,7 @@
   margin-top: -220px;
 }
 
-
-.topBrand-blackFridayFrameLeftButtom{
+.topBrand-blackFridayFrameLeftButtom {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -64,39 +60,36 @@
   z-index: 2;
   overflow-x: hidden;
   overflow-y: hidden;
-  
 }
-
-
 
 .topBrand-grid-container {
   display: grid;
   grid-template-columns: repeat(5, 20%);
   width: 180%; /* Set the maximum width to 100% of the screen width */
   height: 393px;
-  background-color: rgb(255, 255, 255) ;
+  background-color: rgb(255, 255, 255);
   gap: 25px;
   overflow: hidden; /* Hide the overflow to prevent scrollbars */
-  }
-
+}
 
 .brand-item {
-  position: relative; 
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 10px;
+  min-width: 268px;
+  margin-right: 20px;
+  margin-right: 50px;
   background-color: #000000 !important;
   top: 0;
   right: 0;
   border-bottom: 1px solid rgb(211, 211, 211); /* Add border to each product item */
 }
 
-
 .brand-all {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -127,3 +120,29 @@
   height: 65%;
 }
 
+.topBrand-images-container {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 450%;
+  margin-right: 50px;
+}
+
+.topBrand-scroll-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  line-height: 19.07px;
+  text-align: center;
+  color: #164194;
+  width: 70px;
+  height: 70px;
+  padding: 16px 22px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid #164194;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-top: 150px;
+  transform: translateX(-650%);
+}

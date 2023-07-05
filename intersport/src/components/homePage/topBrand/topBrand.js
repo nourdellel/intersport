@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./topBrand.scss";
 import blackFridayFrame from "../../../images/assets/Frame 275.png";
 import blackFridayFrameLeft from "../../../images/assets/Frame 279.png";
@@ -12,6 +12,30 @@ import coqSportif from "../../../images/brands/Group 41.png";
 import jacks from "../../../images/brands/Fill 1 (1).png";
 
 function TopBrand() {
+  const containerRef = useRef(null);
+
+  const scrollNextImage = () => {
+    const container = containerRef.current;
+    const scrollWidth = container.scrollWidth;
+    const scrollLeft = container.scrollLeft;
+    const clientWidth = container.clientWidth;
+    const maxScrollLeft = scrollWidth - clientWidth;
+
+    // Check if there is enough space to scroll to the next image
+    if (scrollLeft < maxScrollLeft) {
+      container.scrollTo({
+        left: scrollLeft + clientWidth,
+        behavior: "smooth",
+      });
+    } else {
+      // Scroll back to the first image
+      container.scrollTo({
+        left: 0,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <div className="main-container">
@@ -51,44 +75,76 @@ function TopBrand() {
           </div>
         </div>
         <div className="topBrand-carousel-topBrand">
-          <div className="container">
-            <div class="topBrand-grid-container">
-              <div class="brand-item">
-                <div class="brand-item-content">
-                  <img className="brand-image" src={nike} alt="brandImg" />
-                  <div class="brand-all">Voir tout &gt;</div>
-                </div>
-              </div>
-              <div class="brand-item">
-                <div class="brand-item-content">
-                  <img className="brand-image" src={adidas} alt="brandImg" />
-                  <div class="brand-all">Voir tout &gt;</div>
-                </div>
-              </div>
-              <div class="brand-item">
-                <div class="brand-item-content">
-                  <img className="brand-image" src={puma} alt="brandImg" />
-                  <div class="brand-all">Voir tout &gt;</div>
-                </div>
-              </div>
-              <div class="brand-item">
-                <div class="brand-item-content">
-                  <img
-                    className="brand-image"
-                    src={coqSportif}
-                    alt="brandImg"
-                  />
-                  <div class="brand-all">Voir tout &gt;</div>
-                </div>
-              </div>
-              <div class="brand-item">
-                <div class="brand-item-content">
-                  <img className="brand-image" src={jacks} alt="brandImg" />
-                  <div class="brand-all">Voir tout &gt;</div>
-                </div>
+          {/* <div class="topBrand-grid-container"> */}
+          <div className="topBrand-images-container" ref={containerRef}>
+            <div class="brand-item">
+              <div class="brand-item-content">
+                <img className="brand-image" src={nike} alt="brandImg" />
+                <div class="brand-all">Voir tout &gt;</div>
               </div>
             </div>
+            <div class="brand-item">
+              <div class="brand-item-content">
+                <img className="brand-image" src={adidas} alt="brandImg" />
+                <div class="brand-all">Voir tout &gt;</div>
+              </div>
+            </div>
+            <div class="brand-item">
+              <div class="brand-item-content">
+                <img className="brand-image" src={puma} alt="brandImg" />
+                <div class="brand-all">Voir tout &gt;</div>
+              </div>
+            </div>
+            <div class="brand-item">
+              <div class="brand-item-content">
+                <img className="brand-image" src={coqSportif} alt="brandImg" />
+                <div class="brand-all">Voir tout &gt;</div>
+              </div>
+            </div>
+            <div class="brand-item">
+              <div class="brand-item-content">
+                <img className="brand-image" src={jacks} alt="brandImg" />
+                <div class="brand-all">Voir tout &gt;</div>
+              </div>
+            </div>
+            <div class="brand-item">
+              <div class="brand-item-content">
+                <img className="brand-image" src={nike} alt="brandImg" />
+                <div class="brand-all">Voir tout &gt;</div>
+              </div>
+            </div>
+            <div class="brand-item">
+              <div class="brand-item-content">
+                <img className="brand-image" src={adidas} alt="brandImg" />
+                <div class="brand-all">Voir tout &gt;</div>
+              </div>
+            </div>
+            <div class="brand-item">
+              <div class="brand-item-content">
+                <img className="brand-image" src={puma} alt="brandImg" />
+                <div class="brand-all">Voir tout &gt;</div>
+              </div>
+            </div>
+            <div class="brand-item">
+              <div class="brand-item-content">
+                <img className="brand-image" src={coqSportif} alt="brandImg" />
+                <div class="brand-all">Voir tout &gt;</div>
+              </div>
+            </div>
+            <div class="brand-item">
+              <div class="brand-item-content">
+                <img className="brand-image" src={jacks} alt="brandImg" />
+                <div class="brand-all">Voir tout &gt;</div>
+              </div>
+            </div>
+            <button
+              className="topBrand-scroll-button"
+              onClick={scrollNextImage}
+            >
+              &gt;
+            </button>
           </div>
+          {/* </div> */}
         </div>
       </div>
     </>

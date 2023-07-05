@@ -1,14 +1,14 @@
 .nav-container {
-  background-color:rgba(246, 245, 243, 1);
-  flex: 1; 
+  background-color: rgba(246, 245, 243, 1);
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-gap: 50px; 
+  grid-gap: 50px;
 }
 
 .nav-container-text {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -17,6 +17,21 @@
   position: relative;
   padding-bottom: 22px;
   padding-top: 20px;
+  cursor: pointer;
+}
+
+.nav-container-text:hover {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: rgb(104, 104, 104);
+  position: relative;
+  padding-bottom: 22px;
+  padding-top: 20px;
+  cursor: pointer;
+  padding-bottom: 20px;
 }
 
 .nav-container-text::after {

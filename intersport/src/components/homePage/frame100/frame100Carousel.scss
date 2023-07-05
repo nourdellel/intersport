@@ -1,7 +1,7 @@
 .frame100Carousel-container {
   display: grid;
-  grid-template-columns: 0.8fr 1fr 1fr 1fr; 
-  grid-gap: 10px; 
+  grid-template-columns: 0.8fr 1fr 1fr 1fr;
+  grid-gap: 10px;
   align-items: center;
   margin-top: -80px;
 }
@@ -15,11 +15,10 @@
 }
 
 .column-left {
-// padding-left: 300px;
-// margin-top: -80px;
- display: flex;
+  // padding-left: 300px;
+  // margin-top: -80px;
+  display: flex;
   flex-direction: row;
-
 }
 
 .column-left-image {
@@ -30,12 +29,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
-
 .discount-price {
-  font-family: 'Amsi Pro Condensed', sans-serif;
+  font-family: "Amsi Pro Condensed", sans-serif;
   font-size: 24px;
   line-height: 14.4px;
   color: rgba(255, 230, 0, 1);
@@ -52,27 +49,27 @@
 }
 
 .product-category {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 21.79px;
-  color: rgba(57, 57, 56, 1)
+  color: rgba(57, 57, 56, 1);
 }
 
 .product-brand {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 24px;
-  color: rgba(57, 57, 56, 1)
+  color: rgba(57, 57, 56, 1);
 }
 
 .product-name {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  color: rgba(57, 57, 56, 1)
+  color: rgba(57, 57, 56, 1);
 }
 
 .column-right-text-line {
@@ -88,7 +85,6 @@
   text-decoration: line-through;
   padding-top: 6px;
   padding-right: 8px;
-
 }
 
 .product-newPrice {
@@ -107,14 +103,18 @@
   color: rgba(255, 255, 255, 1);
   width: 97px;
   height: 41px;
-  // padding: 16px 22px;
   border-radius: 26px;
   gap: 10px;
   background: rgba(22, 65, 148, 1);
   border: none;
   margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
 }
 
+.buy-button:hover {
+  background: rgb(54, 87, 158);
+}
 
 .scroll-button {
   font-family: "Open Sans", sans-serif;
@@ -129,6 +129,7 @@
   gap: 10px;
   background: rgba(255, 255, 255, 1);
   border: none;
-  margin-top: 30px;  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1575);
+  margin-top: 30px;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1575);
   cursor: pointer;
 }

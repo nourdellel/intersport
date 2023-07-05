@@ -1,5 +1,5 @@
 .sports-blackText {
-  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-family: "AmsiProCond-Ultra", sans-serif;
   font-size: 50px;
   line-height: 50px;
   text-transform: uppercase;
@@ -7,7 +7,7 @@
 }
 
 .sports-outlinedText {
-  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-family: "AmsiProCond-Ultra", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
@@ -18,9 +18,8 @@
   margin-left: -310px;
 }
 
-
 .sports-exclusivityText {
-  font-family: 'AmsiProCond-SemiBoldItalic', sans-serif;
+  font-family: "AmsiProCond-SemiBoldItalic", sans-serif;
   font-size: 23px;
   line-height: 23px;
   text-transform: uppercase;
@@ -36,14 +35,41 @@
   z-index: 0;
 }
 
-
 .sport-image {
-margin-bottom: 40px;}
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
 
 .sports-container-selectionBackgroundImage {
   z-index: 1;
   margin-top: 130px;
   margin-left: 10px;
   width: 65%;
-  height: 65%; 
+  height: 65%;
+}
+
+.sport-scroll-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  line-height: 19.07px;
+  text-align: center;
+  color: #164194;
+  width: 70px;
+  height: 70px;
+  padding: 16px 22px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 1);
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-top: 150px;
+  transform: translateX(-750%);
+}
+
+.sport-images-container {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 400%;
 }
