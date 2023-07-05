@@ -1,12 +1,206 @@
+
 .selection-container {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 500px;
   background: linear-gradient(180deg, #ffe600, #ffac00);
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide the container into two equal columns */
+  grid-gap: 10px; /* Add some gap between the columns */
+}
+
+.selection-container-products {
+  position: relative;
+  // width: calc(100% - 10%); /* Adjust the width to leave 10% of the container hidden */
+  height: 400;
+  background: rgb(242, 242, 242);
+  margin-top: -120px; /* Adjust the negative margin to move the container up */
+  margin-left: 10%; /* Adjust the margin-left to hide 10% of the container */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  z-index: 2;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .selection-container-blackFridayFrame {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 1;
+}
+
+.selection-container-blackFridayFrameLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+}
+
+.selection-container-selectionBackgroundImage {
+  z-index: 1;
+  margin-top: 60px;
+  margin-left: 170px;
+  width: 65%;
+  height: 65%;
+}
+
+.selection-container-Right-Column {
+  display: flex;
+  // justify-content: flex-end; 
+}
+
+.selection-container-Left-Column {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.selection-container-blackText {
+  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-left: -500px;
+}
+
+.selection-container-outlinedText {
+  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  margin-left: -380px;
+}
+
+.product-grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  width: 150%; /* Set the maximum width to 100% of the screen width */
+  height: 393px;
+  background-color: rgb(211, 211, 211) ;
+  
+}
+
+.product-item {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff !important;
+  top: 0;
+  right: 0;
+  border-left: 1px solid rgb(211, 211, 211); /* Add border to each product item */
+  border-bottom: 1px solid rgb(211, 211, 211); /* Add border to each product item */
+  border-top: 1px solid rgb(211, 211, 211); /* Add border to each product item */
+
+}
+
+.product-image {
+  object-fit: cover;
+}
+
+.brand-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.79px;
+  color: rgba(60, 60, 59, 1);
+}
+
+.product-name {
+  margin-top: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(60, 60, 59, 1);
+}
+
+.bonPlan-container-Right-Column-text-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.selection-allTheSelectionButton {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.07px;
+  padding: 16px, 22px, 16px, 22px;
+  color: rgba(57, 57, 56, 1);
+  width: 163px;
+  height: 41px;
+  border-radius: 26px;
+  gap: 10px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(59, 59, 60, 1);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 190px; /* Center horizontally */
+  cursor: pointer;
+}
+
+
+
+.product-oldPrice {
+  font-size: 12px;
+  line-height: 16.34px;
+  font-weight: 400;
+  color: rgba(57, 57, 56, 1);
+  text-decoration: line-through;
+  padding-top: 6px;
+  padding-right: 8px;
+
+}
+
+.product-newPrice {
+  font-size: 20px;
+  line-height: 27.24px;
+  font-weight: 700;
+  color: rgba(227, 6, 19, 1);
+}
+
+.price-text-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-badge {
+  position: absolute;
+  width: 136px;
+  height: 22px;
+  top: 12px;
+  left: 220px;
+  display: flex;
+  border: 2px solid rgb(0, 0, 0); /* Add border to each product item */
+}
+
+.product-badge-text {
+  flex: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.product-badge-number {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }

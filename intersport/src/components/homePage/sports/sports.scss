@@ -1,0 +1,49 @@
+.sports-blackText {
+  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-left: -440px;
+}
+
+.sports-outlinedText {
+  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  margin-left: -310px;
+}
+
+
+.sports-exclusivityText {
+  font-family: 'AmsiProCond-SemiBoldItalic', sans-serif;
+  font-size: 23px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin-left: -520px;
+  margin-bottom: 5px;
+  margin-top: -150px;
+}
+
+.sports-container-blackFridayFrameRightButtom {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+
+.sport-image {
+margin-bottom: 40px;}
+
+.sports-container-selectionBackgroundImage {
+  z-index: 1;
+  margin-top: 130px;
+  margin-left: 10px;
+  width: 65%;
+  height: 65%; 
+}
