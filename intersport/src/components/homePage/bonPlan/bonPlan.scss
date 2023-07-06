@@ -48,6 +48,7 @@
 .bonPlan-container-Right-Column-discount-price {
   font-family: "Amsi Pro Condensed", sans-serif;
   font-size: 51.13px;
+  font-weight: 800;
   line-height: 30.68px;
   color: rgba(255, 230, 0, 1);
   text-align: center;
@@ -129,4 +130,153 @@
 .bonPlan-container-Right-Column-buy-button:hover {
   color: rgb(255, 255, 255);
   background: rgb(0, 0, 0);
+}
+
+.bonPlan-background-mobile{
+  width: 105%;
+  
+}
+
+
+
+.bonPlan-content {
+  position: absolute;
+  z-index: 4;
+}
+
+.bonPlan-text {
+  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-size: 25.02px;
+  line-height: 23.36px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+.bonPlan-text-outlined {
+  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-size: 25px;
+  line-height: 25px;
+  color: #000000;
+  margin-left: 20px;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+}
+
+
+.bonPlan-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.07px;
+  padding: 16px, 22px, 16px, 22px;
+  color: rgba(57, 57, 56, 1);
+  width: 253px;
+  height: 41px;
+  border-radius: 26px;
+  gap: 10px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(59, 59, 60, 1);
+  // margin-top: 50px;
+  // margin-bottom: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.bonPlan-discount-price-mobile {
+  font-family: "Amsi Pro Condensed", sans-serif;
+  font-size: 34px;
+  line-height: 20.4px;
+  font-weight: 800;
+  color: rgba(255, 230, 96, 1);
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 16px 12px 0px 12px;
+  border-radius: 10px;
+  gap: 10px;
+  height: 40px;
+  width: 84px;
+  margin: 30px 0px 0px 30px;
+}
+
+.bonPlan-watchImage {
+  z-index: 4;
+  position: relative;
+  
+}
+
+.bonPlan-backgroundVectorImageMobile {
+  margin: 100px 0px 40px 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.bonPlan-backgroundRoundImageMobile {
+  margin: 60px 0px 40px 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+@media (max-width: 800px) {
+  .bonPlan-laptop-display {
+      display: none;
+  }
+  .bonPlan-container-Right-Column-product-name {
+    font-size: 13px;
+    line-height: 14.3px;
+  }
+  .bonPlan-container-Right-Column-product-brand {
+    font-size: 16px;
+    line-height: 21.79px;
+  }
+  .bonPlan-container-Right-Column-product-oldPrice {
+    font-size: 12px;
+    line-height: 16.34px;
+    font-weight: 400;
+    color: rgba(57, 57, 56, 1);
+  
+  }
+  
+  .bonPlan-container-Right-Column-product-newPrice {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 700;
+  }
+  .bonPlan-container-Right-Column-buy-button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.07px;
+    color: rgba(57, 57, 56, 1);
+    width: 85px;
+    height: 47px;
+    border-radius: 26px;
+    gap: 10px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(57, 57, 56, 1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40%; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+}
+
+@media (min-width: 800px) {
+  .bonPlan-mobile-display {
+      display: none;
+  }
 }

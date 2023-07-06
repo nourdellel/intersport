@@ -15,14 +15,12 @@ function Selection() {
     const clientWidth = container.clientWidth;
     const maxScrollLeft = scrollWidth - clientWidth;
 
-    // Check if there is enough space to scroll to the next image
     if (scrollLeft < maxScrollLeft) {
       container.scrollTo({
         left: scrollLeft + clientWidth,
         behavior: "smooth",
       });
     } else {
-      // Scroll back to the first image
       container.scrollTo({
         left: 0,
         behavior: "smooth",
@@ -74,6 +72,7 @@ function Selection() {
                     <div className="product-badge-text">Black Friday</div>
                     <div className="product-badge-number">25%</div>
                   </div>
+                  <div className="product-badge-new">NOUVEAUTÉ</div>
                   <img
                     className="product-image"
                     src={productImg}

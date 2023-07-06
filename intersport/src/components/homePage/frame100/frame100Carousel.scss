@@ -1,10 +1,10 @@
-.frame100Carousel-container {
-  display: grid;
-  grid-template-columns: 0.8fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  align-items: center;
-  margin-top: -80px;
-}
+// .frame100Carousel-container {
+//   display: grid;
+//   grid-template-columns: 0.5fr 1fr 1fr;
+//   grid-gap: 10px;
+//   align-items: center;
+//   margin-top: -80px;
+// }
 
 .column-Carousel {
   flex: 1; /* Distribute the available space equally among the columns */
@@ -15,8 +15,6 @@
 }
 
 .column-left {
-  // padding-left: 300px;
-  // margin-top: -80px;
   display: flex;
   flex-direction: row;
 }
@@ -28,7 +26,8 @@
 .column-right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
 }
 
 .discount-price {
@@ -66,6 +65,7 @@
 
 .product-name {
   font-family: "Open Sans", sans-serif;
+  white-space: nowrap;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -75,6 +75,12 @@
 .column-right-text-line {
   display: flex;
   padding-top: 15px;
+}
+
+
+.center-container {
+  display: flex;
+  align-items: center;
 }
 
 .product-oldPrice {
@@ -116,7 +122,7 @@
   background: rgb(54, 87, 158);
 }
 
-.scroll-button {
+.frame100Carousel-scroll-button-right {
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
   line-height: 19.07px;
@@ -132,4 +138,66 @@
   margin-top: 30px;
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1575);
   cursor: pointer;
+  transform: translateY(200%);
+
+}
+
+.frame100Carousel-scroll-button-left {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  line-height: 19.07px;
+  text-align: center;
+  color: rgba(22, 65, 148, 1);
+  width: 70px;
+  height: 70px;
+  padding: 16px 22px;
+  border-radius: 50%;
+  gap: 10px;
+  background: rgba(255, 255, 255, 1);
+  border: none;
+  margin-top: 30px;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1575);
+  cursor: pointer;
+  // position: absolute;
+  align-items: center;  
+  text-align: center;
+  transform: translateY(200%);
+}
+
+
+
+
+.frameCarousel-images-container {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 160%;
+}
+
+
+.parent-container {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  margin-top: -4.5%;
+
+}
+
+.column-1 {
+  display: grid;
+  transform: translateX(100%);
+}
+
+.column-2 {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  text-align: center;
+  gap: 10%;
+}
+
+.sub-column {
+  text-align: left;
 }

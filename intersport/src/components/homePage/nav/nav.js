@@ -3,13 +3,15 @@ import "./nav.scss";
 
 function Nav() {
   return (
-    <div className="nav-container">
-      <div className="nav-container-text">Sélection exceptionnelle</div>
-      <div className="nav-container-text">Lifestyle</div>
-      <div className="nav-container-text">Grandes marques</div>
-      <div className="nav-container-text">Electronique</div>
-      <div className="nav-container-text">Sports</div>
-      <div className="nav-container-text">Musculation</div>
+    <div class="navbar-container">
+      <div class="navbar-scroll">
+        <div class="navbar-item">Sélection exceptionnelle</div>
+        <div class="navbar-item">Lifestyle</div>
+        <div class="navbar-item">Grandes marques</div>
+        <div class="navbar-item">Electronique</div>
+        <div class="navbar-item">Sports</div>
+        <div class="navbar-item">Musculation</div>
+      </div>
     </div>
   );
 }

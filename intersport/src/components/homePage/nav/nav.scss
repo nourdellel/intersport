@@ -1,45 +1,49 @@
-.nav-container {
+.navbar-container {
   background-color: rgba(246, 245, 243, 1);
-  flex: 1;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-gap: 50px;
 }
 
-.nav-container-text {
+.navbar-scroll {
+  display: flex;
+}
+
+.navbar-item {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 16px;
   text-transform: uppercase;
   color: rgba(57, 57, 56, 1);
-  position: relative;
-  padding-bottom: 22px;
-  padding-top: 20px;
+  padding: 20px 5px;
   cursor: pointer;
+  position: relative;
 }
 
-.nav-container-text:hover {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: rgb(104, 104, 104);
-  position: relative;
-  padding-bottom: 22px;
-  padding-top: 20px;
-  cursor: pointer;
-  padding-bottom: 20px;
+.navbar-item:not(:last-child) {
+  margin-right: 60px;
 }
 
-.nav-container-text::after {
+.navbar-item::after {
   content: "";
   position: absolute;
+  bottom: 0;
   left: 0;
-  bottom: -2px;
   width: 100%;
-  height: 2px;
-  background-color: rgba(59, 59, 60, 1);
+  border-bottom: 1px solid rgba(59, 59, 60, 1);
+}
+
+/* Media query for mobile view */
+@media (max-width: 600px) {
+  .navbar-scroll {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .navbar-item {
+    margin-right: 10px;
+  }
 }
