@@ -52,7 +52,7 @@ function Frame100Carousel() {
                 <div className="column-right product-name">
                   Montre GPS & Cardio VENUS SQ
                 </div>
-                <div className="column-right-text-line">
+                <div className="carousel-column-right-text-line">
                   <div className="column-right product-oldPrice">249,99€</div>
                   <div className="column-right product-newPrice">189,99€</div>
                 </div>
