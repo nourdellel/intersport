@@ -2,13 +2,15 @@ import React from "react";
 import "./frame100.scss";
 import image from "../../../images/backgrounds/1809_STUDIO_BOXE_BOX2_DI_340784 copie 1.png";
 import imageMobile from "../../../images/backgrounds/1809_STUDIO_BOXE_BOX2_DI_340784 mobile.png";
-
 import counDownImage from "../../../images/assets/CountDown2_blackfriday_mobile.png";
 import frameMobile from "../../../images/assets/Frame 291 mobile.png";
+import intersportLogo from "../../../images/assets/Brand symbole_intersport_.svg";
 
 function Frame100() {
   return (
     <div className="frame100-container">
+      <img src={intersportLogo} alt="intersport" className="intersportLogo" />
+
       <div className="column column-center">
         <img src={frameMobile} alt="frame" className="frameTopLeftMobile" />
 

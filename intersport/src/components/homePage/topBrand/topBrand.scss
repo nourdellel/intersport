@@ -4,8 +4,15 @@
   height: 500px;
   background: linear-gradient(180deg, #ffe600, #ffac00);
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Divide the container into two equal columns */
-  grid-gap: 10px; /* Add some gap between the columns */
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.topBrand-container-Left-Column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-container {
@@ -53,8 +60,8 @@
 .topBrand-carousel-topBrand {
   position: relative;
   height: 400;
-  margin-top: -120px; /* Adjust the negative margin to move the container up */
-  margin-left: 10%; /* Adjust the margin-left to hide 10% of the container */
+  margin-top: -120px;
+  margin-left: 10%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   z-index: 2;
@@ -65,11 +72,11 @@
 .topBrand-grid-container {
   display: grid;
   grid-template-columns: repeat(5, 20%);
-  width: 180%; /* Set the maximum width to 100% of the screen width */
+  width: 180%;
   height: 393px;
   background-color: rgb(255, 255, 255);
   gap: 25px;
-  overflow: hidden; /* Hide the overflow to prevent scrollbars */
+  overflow: hidden;
 }
 
 .brand-item {
@@ -85,7 +92,7 @@
   background-color: #000000 !important;
   top: 0;
   right: 0;
-  border-bottom: 1px solid rgb(211, 211, 211); /* Add border to each product item */
+  border-bottom: 1px solid rgb(211, 211, 211);
 }
 
 .brand-all {
@@ -145,4 +152,122 @@
   right: 0;
   margin-top: 150px;
   transform: translateX(-650%);
+}
+
+.topBrand-blackFridayFrameTopRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.topBrand-blackFridayFrameButtomRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.topBrand-blackFridayFrameTopLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+/* Media query for mobile view */
+@media (min-width: 500px) {
+  .topBrand-FrameTopBrandMobileRight {
+    display: none;
+  }
+  .topBrand-FrameTopBrandMobileLeft {
+    display: none;
+  }
+  .topBrand-blackTextBrand {
+    display: none;
+  }
+  .topBrand-outlinedTextTopBig {
+    display: none;
+  }
+}
+
+/* Media query for mobile view */
+@media (max-width: 500px) {
+  .topBrand-FrameTopBrandMobileRight {
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    margin-left: -20px;
+  }
+  .topBrand-FrameTopBrandMobileLeft {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+  .topBrand-blackFridayFrameTopRight {
+    display: none;
+  }
+  .topBrand-blackFridayFrameButtomRight {
+    display: none;
+  }
+  .topBrand-blackFridayFrameTopLeft {
+    display: none;
+  }
+  .topBrand-blackFridayFrameLeftButtom {
+    display: none;
+  }
+  .topBrand-exclusivityText {
+    margin-top: 140px;
+    margin-left: 20px;
+  }
+  .topBrand-blackText {
+    margin-left: 20px;
+    white-space: nowrap;
+  }
+  .topBrand-blackTextBrand {
+    font-family: "AmsiProCond-Ultra", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+  .topBrand-outlinedText {
+    display: none;
+  }
+  .topBrand-outlinedTextTopBig {
+    font-family: "AmsiProCond-Ultra", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+    margin-left: 20px;
+  }
+  .topBrand-container-Left-Column {
+    display: inline-block;
+  }
+  .topBrand-carousel-topBrand {
+    margin-left: 20px;
+    margin-top: -10px;
+  }
+  .brand-item {
+    min-width: 220px;
+  }
+  .topBrand-container {
+    height: 350px;
+  }
+  .topBrand-scroll-button {
+    margin-top: 120px;
+    transform: translateX(-25%);
+  }
+  .main-container {
+    height: 720px;
+  }
+  .topBrand-images-container {
+    width: 500%;
+  }
 }

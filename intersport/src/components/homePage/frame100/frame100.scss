@@ -1,10 +1,9 @@
-
-@import '../../../styles/fonts.scss';
+@import "../../../styles/fonts.scss";
 
 .frame100-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  background: linear-gradient(180deg, #FFE600, #FFAC00);
+  background: linear-gradient(180deg, #ffe600, #ffac00);
 }
 
 .frame100-image {
@@ -37,52 +36,49 @@
   }
 
   .blackTextMobile {
-    font-family: 'AmsiProCond-Ultra', sans-serif;
-  font-size: 50px !important;
-  line-height: 45.5px;
-  color: #000000;
+    font-family: "AmsiProCond-Ultra", sans-serif;
+    font-size: 50px !important;
+    line-height: 45.5px;
+    color: #000000;
   }
-  
+
   .fridayTextMobile {
-    font-family: 'AmsiProCond-Ultra', sans-serif;
-  font-size: 50px;
-  line-height: 45.5px;
-  color: #000000;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 10px;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000000;
+    font-family: "AmsiProCond-Ultra", sans-serif;
+    font-size: 50px;
+    line-height: 45.5px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
   }
 
-  
- .lastDaysText {
-   display: none !important;
- }
+  .lastDaysText {
+    display: none !important;
+  }
 
- .column-center {
-  display: flex;
-  flex-direction: column !important;
+  .column-center {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .text-line {
+    flex-direction: column !important;
+  }
+
+  .frameTopLeftMobile {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    display: flex !important;
+  }
+
+  .coundownImg {
+    margin-top: 25px;
+  }
 }
-
-.text-line {
-  flex-direction: column !important;
-}
-
-.frameTopLeftMobile {
-  position: absolute !important;
-  left: 0;
-  top: 0;
-  display: flex !important;
-}
-
-.coundownImg {
-  margin-top: 25px;
-}
-}
-
-
 
 .frameTopLeftMobile {
   display: none;
@@ -104,14 +100,14 @@
 }
 
 .blackText {
-  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-family: "AmsiProCond-Ultra", sans-serif;
   font-size: 50px;
   line-height: 45.5px;
   color: #000000;
 }
 
 .fridayText {
-  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-family: "AmsiProCond-Ultra", sans-serif;
   font-size: 50px;
   line-height: 45.5px;
   color: #000000;
@@ -132,7 +128,7 @@
 }
 
 .lastDaysText {
-  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-family: "AmsiProCond-Ultra", sans-serif;
   font-size: 17.94px;
   line-height: 17.94px;
   color: #ffffff;
@@ -149,5 +145,10 @@
   gap: 10px;
 }
 
-
-
+.intersportLogo {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}

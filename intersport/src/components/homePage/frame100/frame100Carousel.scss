@@ -1,17 +1,10 @@
-// .frame100Carousel-container {
-//   display: grid;
-//   grid-template-columns: 0.5fr 1fr 1fr;
-//   grid-gap: 10px;
-//   align-items: center;
-//   margin-top: -80px;
-// }
+@import "../../../styles/fonts.scss";
 
 .column-Carousel {
-  flex: 1; /* Distribute the available space equally among the columns */
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  // margin-top: -80px;
 }
 
 .column-left {
@@ -26,8 +19,6 @@
 .column-right {
   display: flex;
   flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
 }
 
 .discount-price {
@@ -75,8 +66,8 @@
 .column-right-text-line {
   display: flex;
   padding-top: 15px;
+  padding-left: 35%;
 }
-
 
 .center-container {
   display: flex;
@@ -139,7 +130,6 @@
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1575);
   cursor: pointer;
   transform: translateY(200%);
-
 }
 
 .frame100Carousel-scroll-button-left {
@@ -158,14 +148,10 @@
   margin-top: 30px;
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1575);
   cursor: pointer;
-  // position: absolute;
-  align-items: center;  
+  align-items: center;
   text-align: center;
   transform: translateY(200%);
 }
-
-
-
 
 .frameCarousel-images-container {
   display: flex;
@@ -174,12 +160,10 @@
   width: 160%;
 }
 
-
 .parent-container {
   display: grid;
   grid-template-columns: 20% 60% 20%;
   margin-top: -4.5%;
-
 }
 
 .column-1 {
@@ -200,4 +184,63 @@
 
 .sub-column {
   text-align: left;
+}
+
+@media (max-width: 800px) {
+  .carousel-laptop-display {
+    display: none;
+  }
+  .discount-price {
+    margin-bottom: 20px;
+  }
+  .buy-button {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 800px) {
+  .carousel-mobile-display {
+    display: none;
+  }
+}
+
+.sub-column-mobile {
+  text-align: center;
+}
+
+.badge-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-top: -10px;
+}
+
+.badge {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #81bc00;
+  color: white;
+  font-size: 16.8px;
+  font-weight: 700;
+  line-height: 13.6px;
+}
+
+.column-right-badge-line {
+  display: flex;
+  padding-top: 15px;
+  padding-left: 25%;
+}
+
+.product-text-price-easy {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.34px;
 }

@@ -1,17 +1,12 @@
 .catalogue-container {
+  padding-top: 50px;
   position: relative;
   width: 100%;
   height: 210px;
   background: linear-gradient(180deg, #ffe600, #ffac00);
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Divide the container into two equal columns */
-  grid-gap: 10px; /* Add some gap between the columns */
-}
-
-.catalogue-container-empty {
-  width: 100%;
-  height: 143px;
-  background-color: rgb(242, 242, 242);
+  grid-template-columns: 40% 20% 40%;
+  grid-gap: 10px;
 }
 
 .catalogue-container-blackFridayFrame {
@@ -21,18 +16,32 @@
   z-index: 1;
 }
 
+.catalogue-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.catalogue-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
 .catalogue-container-catalogueImage {
   position: absolute;
   bottom: 0;
   z-index: 4;
-  margin-left: 400px;
+  align-items: right;
+  text-align: right;
 }
 
 .catalogue-groupeText {
   position: absolute;
   top: 0;
   z-index: 4;
-  margin-left: 900px;
+  margin-left: -150px;
   text-align: center;
 }
 
@@ -62,6 +71,7 @@
   font-size: 14px;
   line-height: 19.07px;
   font-weight: 600;
+  text-align: center;
 }
 
 .catalogue-button-discover {
@@ -86,4 +96,76 @@
 .catalogue-button-discover:hover {
   background: rgba(57, 57, 56, 1);
   color: #fff;
+}
+
+/* Media query for mobile view */
+@media (max-width: 500px) {
+  .catalogue-container-blackFridayFrame {
+    display: none;
+  }
+  .topBrand-blackFridayFrameLeftButtom {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .catalogue-laptop-display {
+    display: none;
+  }
+  .catalogue-mobile-display {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 50px;
+  }
+
+  .catalogue-container-catalogueImageMobile {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: 800px) {
+  .catalogue-mobile-display {
+    display: none;
+  }
+}
+
+.catalogue-container-mobile {
+  background: linear-gradient(180deg, #ffe600, #ffac00);
+  width: 100%;
+  height: 210px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalogue-catalogueTextMobile {
+  font-family: "AmsiProCond-SemiBoldItalic", sans-serif;
+  font-size: 60px;
+  line-height: 70.31px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalogue-catalogueTextWhiteMobile {
+  font-family: "AmsiProCond-SemiBoldItalic", sans-serif;
+  font-size: 60px;
+  line-height: 70.31px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 20px;
+  color: rgba(246, 245, 243, 1);
+  margin-left: 30px;
+}
+
+.catalogue-groupeTextMobile {
+  position: absolute;
+  top: 0;
+  z-index: 4;
+  text-align: center;
 }

@@ -4,6 +4,8 @@ import blackFridayFrame from "../../../images/assets/Frame 275.png";
 import blackFridayFrameLeft from "../../../images/assets/Frame 279.png";
 import blackFridayFrameLeftButtom from "../../../images/assets/Frame 281.png";
 import blackFridayFrameRightButtom from "../../../images/assets/Frame 280.png";
+import blackFridayFrameMobileRight from "../../../images/assets/FrameTopBrandMobileRight.png";
+import blackFridayFrameMobileLeft from "../../../images/assets/FrameTopBrandMobileLeft.png";
 import selectionBackgroundImage from "../../../images/assets/2210_blackfriday_imagelame_produit02_desktop.png";
 import nike from "../../../images/brands/Group 8.png";
 import adidas from "../../../images/brands/Vector (2).png";
@@ -38,16 +40,23 @@ function TopBrand() {
     <>
       <div className="main-container">
         <div className="topBrand-container">
-          <div className="selection-container-Left-Column">
+          <div className="topBrand-container-Left-Column">
             <img
-              className="selection-container-blackFridayFrameLeft"
+              className="topBrand-blackFridayFrameTopLeft"
               src={blackFridayFrameLeft}
               alt="blackFridayFrame"
             />
+            <img
+              className="topBrand-FrameTopBrandMobileLeft"
+              src={blackFridayFrameMobileLeft}
+              alt="blackFridayFrame"
+            />
             <div className="topBrand-exclusivityText">exclusivité web</div>
-
             <div className="topBrand-blackText">Black Friday sur</div>
             <div className="topBrand-outlinedText">Les grandes marques</div>
+            <div className="topBrand-outlinedTextTopBig">Les grandes</div>
+            <div className="topBrand-blackTextBrand">marques</div>
+
             <img
               className="topBrand-blackFridayFrameLeftButtom"
               src={blackFridayFrameLeftButtom}
@@ -56,12 +65,18 @@ function TopBrand() {
           </div>
           <div className="selection-container-Right-Column">
             <img
-              className="selection-container-blackFridayFrame"
+              className="topBrand-blackFridayFrameTopRight"
               src={blackFridayFrame}
               alt="blackFridayFrame"
             />
             <img
-              className="selection-container-blackFridayFrame"
+              className="topBrand-FrameTopBrandMobileRight"
+              src={blackFridayFrameMobileRight}
+              alt="blackFridayFrame"
+            />
+
+            <img
+              className="topBrand-blackFridayFrameButtomRight"
               src={blackFridayFrameRightButtom}
               alt="blackFridayFrame"
             />
@@ -73,7 +88,6 @@ function TopBrand() {
           </div>
         </div>
         <div className="topBrand-carousel-topBrand">
-          {/* <div class="topBrand-grid-container"> */}
           <div className="topBrand-images-container" ref={containerRef}>
             <div class="brand-item">
               <div class="brand-item-content">
@@ -142,7 +156,6 @@ function TopBrand() {
               &gt;
             </button>
           </div>
-          {/* </div> */}
         </div>
       </div>
     </>

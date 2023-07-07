@@ -1,11 +1,9 @@
 .bonPlan-container {
   background-color: rgba(242, 242, 242, 1);
   grid-template-columns: 1fr 1fr;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  // grid-gap: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -132,12 +130,9 @@
   background: rgb(0, 0, 0);
 }
 
-.bonPlan-background-mobile{
+.bonPlan-background-mobile {
   width: 105%;
-  
 }
-
-
 
 .bonPlan-content {
   position: absolute;
@@ -145,7 +140,7 @@
 }
 
 .bonPlan-text {
-  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-family: "AmsiProCond-Ultra", sans-serif;
   font-size: 25.02px;
   line-height: 23.36px;
   text-transform: uppercase;
@@ -155,7 +150,7 @@
 }
 
 .bonPlan-text-outlined {
-  font-family: 'AmsiProCond-Ultra', sans-serif;
+  font-family: "AmsiProCond-Ultra", sans-serif;
   font-size: 25px;
   line-height: 25px;
   color: #000000;
@@ -165,7 +160,6 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #ffffff;
 }
-
 
 .bonPlan-button {
   font-family: "Open Sans", sans-serif;
@@ -180,8 +174,6 @@
   gap: 10px;
   background: rgb(255, 255, 255);
   border: 1px solid rgba(59, 59, 60, 1);
-  // margin-top: 50px;
-  // margin-bottom: 50px;
   margin-left: 10px;
   cursor: pointer;
   transition: background-color 0.5s ease;
@@ -208,7 +200,6 @@
 .bonPlan-watchImage {
   z-index: 4;
   position: relative;
-  
 }
 
 .bonPlan-backgroundVectorImageMobile {
@@ -227,10 +218,9 @@
   z-index: 1;
 }
 
-
 @media (max-width: 800px) {
   .bonPlan-laptop-display {
-      display: none;
+    display: none;
   }
   .bonPlan-container-Right-Column-product-name {
     font-size: 13px;
@@ -245,9 +235,8 @@
     line-height: 16.34px;
     font-weight: 400;
     color: rgba(57, 57, 56, 1);
-  
   }
-  
+
   .bonPlan-container-Right-Column-product-newPrice {
     font-size: 16px;
     line-height: 23px;
@@ -267,9 +256,8 @@
     border: 1px solid rgba(57, 57, 56, 1);
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 40%; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
-
+    margin-left: 40%;
+    margin-right: auto;
     cursor: pointer;
     transition: background-color 0.5s ease;
   }
@@ -277,6 +265,6 @@
 
 @media (min-width: 800px) {
   .bonPlan-mobile-display {
-      display: none;
+    display: none;
   }
 }
